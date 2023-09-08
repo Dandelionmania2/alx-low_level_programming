@@ -1,2 +1,2 @@
 #!/bin/bash
-export $CFILE -E -c c
+gcc $CFILE -c
