@@ -1,15 +1,17 @@
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
- * main - generate random numbers to detect -ve +ve
+ * main - Deterrmines if a number is +ve, -ve or zero.
  *
- * Return: always (0)
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
 
-	srand(time(0));
+	srand(time(0))
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
