@@ -1,21 +1,21 @@
-#include "stdio.h"
-
+#include "main.h"
 /**
- * main - print string
- *
- * Return: Always 0.
+ * main - Entry point
+ * Description: prints '_putchar\n'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
+char str[] = "_putchar";
+int i = 0;
+
+while (str[i] != '\0')
+	{
+	char c = str[i];
+
+	_putchar(c);
+	i++;
+	}
 return (0);
 }
 
