@@ -1,19 +1,17 @@
 #include <stdio.h>
 /**
- * main - print numbers of base ten
- *
- * Return: always (0)
- *
- */
+* main - print single digit base numbers
+* Return: program returns 0
+*/
 int main(void)
 {
-	int base_ten = 0;
-	
-	while (base_ten <= 10)
+	char n = '0';
+
+	while (n <= '9')
 	{
-		putchar(base_ten);
-		base_ten++;
+		putchar (n);
+		n++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
